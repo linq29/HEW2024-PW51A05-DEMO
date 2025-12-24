@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('pageTitle').textContent = `${shrine.spot} | 十二支詣`;
 
         // Update image
-        document.getElementById('spotImage').src = `images/spot${shrine.spotID}.jpg`;
+        document.getElementById('spotImage').src = `images/spot${shrine.spotID}.webp`;
         document.getElementById('spotImage').alt = shrine.spot;
 
         // Update spot info

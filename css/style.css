@@ -44,7 +44,7 @@ body {
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0.05em;
-    background-image: url(../images/grid.jpg);
+    background-image: url(../images/grid.webp);
     background-repeat: repeat;
     background-attachment: fixed;
     min-width: 1200px;
@@ -54,13 +54,18 @@ main {
     background-color: #f6efe5;
 }
 
+footer {
+    background-color: #f6efe5;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
 .footer {
     color: #b18b09;
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
     text-align: center;
-    margin-top: 5rem;
 }
 
 img {
@@ -192,7 +197,6 @@ h1 {
     border-right: 2px solid #b18b09;
     width: 100%;
     line-height: 1.6;
-    padding-bottom: 0.5rem;
 }
 
 .nav-area-items ul {
@@ -283,7 +287,6 @@ h1 {
 .carousel-track {
     display: flex;
     width: calc(400px * 10);
-    /* 4000px total for 10 images */
     animation: scroll 50s linear infinite;
 }
 
@@ -308,8 +311,8 @@ h1 {
 .index-func {
     border: 2px solid #b18b09;
     background-color: white;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem 2rem 4rem 2rem;
 }
 
 .index-func h2 {
@@ -362,11 +365,24 @@ h1 {
     text-align: center;
 }
 
-.select-step1-item img {
+.zodiac-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.zodiac-box img {
     width: 100%;
     transition: transform 0.6s ease, opacity 0.6s ease;
     transform-style: preserve-3d;
-    margin-bottom: 1rem;
+    pointer-events: none;
+}
+
+.zodiac-box:hover img {
+    transform: rotateY(180deg);
 }
 
 @keyframes spinIn {
@@ -417,7 +433,7 @@ main.whole {
 
 .random-btn {
     display: block;
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: 0.8rem 2rem;
     font-family: "Kaisei Decol", serif;
     font-size: 1.2rem;
@@ -485,10 +501,8 @@ main.whole {
 }
 
 main.index {
-    padding: 2rem;
-    /* Consistent padding */
+    padding: 2rem 2rem 1rem 2rem;
     position: relative;
-    /* For layering with deco */
 }
 
 .spot-info {
@@ -578,11 +592,10 @@ hr {
 }
 
 /* Footer override for shrine pages */
-main.index+footer {
+/* main.index+footer {
     margin-top: 3rem;
-    /* Reduce spacing after main content */
     padding-bottom: 2rem;
-}
+} */
 
 /* for jyunishi.html */
 .selection-area {
@@ -716,6 +729,7 @@ main.whole {
     height: 100vh;
     padding: 4em;
 }
+
 h1 {
     color: #950303;
     font-size: 2rem;
@@ -763,7 +777,8 @@ h1 {
     font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
-    background-color: #950303; /* Red to match proverb theme */
+    background-color: #950303;
+    /* Red to match proverb theme */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -771,9 +786,11 @@ h1 {
 }
 
 .retry-btn:hover {
-    background-color: #c9302c; /* Brighter red on hover */
+    background-color: #c9302c;
+    /* Brighter red on hover */
     transform: translateY(-2px);
 }
+
 .kotowaza {
     text-align: center;
 }
