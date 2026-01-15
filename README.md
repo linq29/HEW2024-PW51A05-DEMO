@@ -1,4 +1,5 @@
 # HEW2024-PW51A01-DEMO
+**GitHubPages ▶︎ https://linq29.github.io/HEW2024-PW51A05-DEMO/**
 
 本リポジトリは、進級制作展（HAL Event Week）にて展示した  
 個人制作作品 **「十二支にまつわる神社探し」** の DEMO バージョンです。
